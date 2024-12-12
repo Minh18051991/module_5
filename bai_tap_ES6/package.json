@@ -2,10 +2,12 @@
   "name": "module-5",
   "version": "1.0.0",
   "main": "index.js",
+  "type":"module",
   "scripts": {
     "prepare": "tsc",
     "build": "tsc",
     "start": "ts-node src/bai_1.ts",
+    "prime": "node src/primeNumber.js",
     "watch": "tsc -w"
   },
   "keywords": [],
