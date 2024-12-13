@@ -6,7 +6,7 @@
   "scripts": {
     "prepare": "tsc",
     "build": "tsc",
-    "start": "ts-node src/bai_1.ts",
+    "start": "node --loader ts-node src/bai_1.ts",
     "prime": "node src/primeNumber.js",
     "watch": "tsc -w"
   },

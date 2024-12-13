@@ -1,8 +1,16 @@
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 // happy coding 👻
 console.log("hello world");
-
 // Định nghĩa mảng courses
-let courses = [
+var courses = [
     {
         id: 1,
         title: "ReactJS Tutorial",
@@ -29,12 +37,10 @@ let courses = [
         rating: 3.5,
     },
 ];
-
-const ratedCourses = courses.filter(course => course.rating >=3)
+var ratedCourses = courses.filter(function (course) { return course.rating >= 3; });
 console.log("Các khóa học đánh giá từ 3 trở lên:");
 console.log(ratedCourses);
-
-let addedCourses = [
+var addedCourses = [
     {
         id: 6,
         title: "PHP Tutorial",
@@ -51,9 +57,6 @@ let addedCourses = [
         rating: 3.8,
     }
 ];
-
-
-const updatedCoures = [...courses,...addedCourses];
+var updatedCoures = __spreadArray(__spreadArray([], courses, true), addedCourses, true);
 console.log("Các khóa học sau khi thêm mới:");
 console.log(updatedCoures);
-

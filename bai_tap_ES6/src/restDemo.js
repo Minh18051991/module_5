@@ -1,7 +1,8 @@
 // Hàm tính tổng sử dụng rest parameter
-function sum(...numbers) {
-    return numbers.reduce((total, num) => total + num, 0);
-}
+// function sum(...numbers) {
+//     return numbers.reduce((total, num) => total + num, 0);
+// }
+
 
 // Hàm tìm giá trị lớn nhất sử dụng rest parameter
 function findMax(...numbers) {
@@ -14,7 +15,7 @@ function combineArrays(array1, array2, ...otherArrays) {
 }
 
 // Demo sử dụng các hàm
-console.log("Tổng của 1, 2, 3, 4, 5:", sum(1, 2, 3, 4, 5));
+console.log("Tổng của 1, 2, 3, 4, 5:", sum1(1, 2, 3, 4, 5));
 console.log("Giá trị lớn nhất trong 10, 5, 30, 15, 25:", findMax(10, 5, 30, 15, 25));
 
 const fruits = ['apple', 'banana'];
@@ -45,4 +46,10 @@ function logUserInfo(name, email, ...otherInfo) {
 }
 
 logUserInfo("John Doe", "john@example.com", "30 tuổi", "Lập trình viên", "Thích đọc sách");
+
+function sum1(...numbers) {
+    return numbers.reduce((total, num) => total + num, 0);
+}
+let arr = [123, 2, 33, 24, 65];
+console.log("ket qua", sum1(...arr))
 
