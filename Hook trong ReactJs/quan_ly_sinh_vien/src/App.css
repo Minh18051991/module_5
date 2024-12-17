@@ -1,0 +1,154 @@
+/* Global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #4689cc;
+  color: #333;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header styles */
+.App-header {
+  background-color: #3f51b5;
+  padding: 1.5rem 0;
+  color: red !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.App-header h1 {
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.navbar-nav .nav-item .custom-navlink {
+  color: #f10000 !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-item .custom-navlink:hover {
+  color: #f10000;
+}
+/* Main content styles */
+main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Form styles */
+.form-control {
+  border-radius: 0.25rem;
+}
+
+.form-control:focus {
+  border-color: #3f51b5;
+  box-shadow: 0 0 0 0.2rem rgba(63, 81, 181, 0.25);
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #3f51b5;
+  border-color: #3f51b5;
+}
+
+.btn-primary:hover {
+  background-color: #303f9f;
+  border-color: #303f9f;
+}
+
+.btn-danger {
+  background-color: #f3968f;
+  border-color: #f44336;
+}
+
+.btn-danger:hover {
+  background-color: #d32f2f;
+  border-color: #d32f2f;
+}
+
+/* Table styles */
+.table {
+  background-color: #fff;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-radius: 0.25rem;
+}
+
+.table-dark {
+  background-color: #3f51b5;
+}
+
+/* Card styles */
+.card {
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Footer styles */
+footer {
+  background-color: #303f9f;
+  color: #ffffff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .App-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .table-responsive {
+    border: none;
+  }
+}
+
+/* Toast notification styles */
+.Toastify__toast {
+  border-radius: 4px;
+}
+
+.Toastify__toast--success {
+  color: white;
+  background-color: #225ad6;
+  font-family: 'Roboto', sans-serif;
+}
+
+.Toastify__toast--error {
+  background-color: #f44336;
+}
+
+.Toastify__toast--warning {
+  background-color: #ff9800;
+}
+
+.Toastify__toast--info {
+  background-color: #2196f3;
+}
+
+.Toastify__toast--dark {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.app-background {
+  background-image: url('/public/background.jpg'); /* Thay đổi đường dẫn tới hình ảnh của bạn */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}

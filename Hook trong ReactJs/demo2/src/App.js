@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Todo List</h1>
+      <h1>TODO List</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
