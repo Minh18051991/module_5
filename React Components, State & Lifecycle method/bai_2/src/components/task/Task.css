@@ -1,0 +1,24 @@
+.task {
+    transition: all 0.3s ease;
+}
+
+.task:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.task .btn-group {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.task:hover .btn-group {
+    opacity: 1;
+}
+
+.task .btn {
+    padding: 0.25rem 0.5rem;
+}
+
+.task .btn i {
+    font-size: 0.875rem;
+}

@@ -7,12 +7,17 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "5.2",
+    "bootstrap-icons": "^1.11.3",
     "cra-template": "1.2.0",
+    "immutable": "^5.0.3",
     "mdb-react-ui-kit": "^9.0.0",
     "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
     "react-dom": "^18.2.0",
     "react-router-dom": "^7.0.2",
     "react-scripts": "^5.0.1",
+    "toastr": "^2.1.4",
+    "uuid": "^11.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -38,5 +43,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.83.0"
   }
 }
