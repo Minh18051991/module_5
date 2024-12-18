@@ -69,7 +69,7 @@ const StudentDetail = () => {
         <Modal.Header closeButton>
           <Modal.Title>Xác nhận xóa</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Bạn có chắc chắn muốn xóa sinh viên này?</Modal.Body>
+        <Modal.Body>Bạn có chắc chắn muốn xóa sinh viên <strong>{student.fullName}</strong> ?</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={() => setShowDeleteModal(false)}>Hủy</Button>
           <Button variant="thirdary" onClick={handleDelete}>Xóa</Button>

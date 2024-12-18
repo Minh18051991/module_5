@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Form, Button, InputGroup } from 'react-bootstrap';
 import { sampleStudents } from '../data/sampleData';
 
@@ -104,8 +104,15 @@ const StudentList = () => {
                 <tr key={student.id}>
                   <td>{student.fullName}</td>
                   <td>
-                    <Link to={`/student/${student.id}`} className="btn btn-info btn-sm me-2">Chi tiết</Link>
-                    <Button variant="danger" onClick={() => deleteStudent(student.id)}>Xóa</Button>
+                    <NavLink style={{ textDecoration: 'none',color: 'red',fontWeight: 'bold' }}
+                        to={`/student/${student.id}`}
+                        className={({ isActive }) =>
+                            isActive ? "btn btn-info btn-sm me-2 active" : "btn btn-info btn-sm me-2"
+                        }
+                    >
+                      Chi tiết
+                    </NavLink>
+                    <Button style={{fontWeight: 'bolder' }} variant="danger" onClick={() => deleteStudent(student.id)}>Xóa</Button>
                   </td>
                 </tr>
               ))}
