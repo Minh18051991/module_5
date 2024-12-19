@@ -1,0 +1,78 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Nguyễn Văn An",
+      "age": 20,
+      "phone": "0901234567",
+      "email": "an.nguyen@example.com",
+      "address": "Hà Nội",
+      "classId": "1",
+      "gender": "Nam"
+    },
+    {
+      "id": "2",
+      "name": "Trần Thị Bình",
+      "age": 21,
+      "phone": "0912345678",
+      "email": "binh.tran@example.com",
+      "address": "Hồ Chí Minh",
+      "classId": "2",
+      "gender": "Nữ"
+    },
+    {
+      "id": "3",
+      "name": "Lê Văn Cường",
+      "age": 22,
+      "phone": "0923456789",
+      "email": "cuong.le@example.com",
+      "address": "Đà Nẵng",
+      "classId": "1",
+      "gender": "Nam"
+    },
+    {
+      "id": "4",
+      "name": "Phạm Thị Dung",
+      "age": 20,
+      "phone": "0934567890",
+      "email": "dung.pham@example.com",
+      "address": "Hải Phòng",
+      "classId": "3",
+      "gender": "Nữ"
+    },
+    {
+      "id": "5",
+      "name": "Hoàng Văn Em",
+      "age": 23,
+      "phone": "0945678901",
+      "email": "em.hoang@example.com",
+      "address": "Cần Thơ",
+      "classId": "2",
+      "gender": "Nam"
+    },
+    {
+      "id": "2340",
+      "name": "Đặng Hữu Hải Minh",
+      "age": "33",
+      "phone": "0774524480",
+      "email": "minhdhh91@gmail.com",
+      "address": "minhdhh91@gmail.com",
+      "classId": "1",
+      "gender": "Nam"
+    }
+  ],
+  "classes": [
+    {
+      "id": "1",
+      "name": "Lớp A"
+    },
+    {
+      "id": "2",
+      "name": "Lớp B"
+    },
+    {
+      "id": "3",
+      "name": "Lớp C"
+    }
+  ]
+}

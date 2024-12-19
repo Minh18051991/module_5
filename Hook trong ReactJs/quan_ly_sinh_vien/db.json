@@ -1,0 +1,63 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "fullName": "Nguyễn Văn An",
+      "age": 20,
+      "phone": "0901234567",
+      "email": "an.nguyen@example.com",
+      "address": "Hà Nội",
+      "classId": 1
+    },
+    {
+      "id": 2,
+      "fullName": "Trần Thị Bình",
+      "age": 21,
+      "phone": "0912345678",
+      "email": "binh.tran@example.com",
+      "address": "Hồ Chí Minh",
+      "classId": 2
+    },
+    {
+      "id": 3,
+      "fullName": "Lê Văn Cường",
+      "age": 22,
+      "phone": "0923456789",
+      "email": "cuong.le@example.com",
+      "address": "Đà Nẵng",
+      "classId": 1
+    },
+    {
+      "id": 4,
+      "fullName": "Phạm Thị Dung",
+      "age": 20,
+      "phone": "0934567890",
+      "email": "dung.pham@example.com",
+      "address": "Hải Phòng",
+      "classId": 3
+    },
+    {
+      "id": 5,
+      "fullName": "Hoàng Văn Em",
+      "age": 23,
+      "phone": "0945678901",
+      "email": "em.hoang@example.com",
+      "address": "Cần Thơ",
+      "classId": 2
+    }
+  ],
+  "classes": [
+    {
+      "id": 1,
+      "name": "Lớp A"
+    },
+    {
+      "id": 2,
+      "name": "Lớp B"
+    },
+    {
+      "id": 3,
+      "name": "Lớp C"
+    }
+  ]
+}

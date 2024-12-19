@@ -1,0 +1,48 @@
+.studentList {
+  margin-top: 2rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.searchBar {
+  margin-bottom: 1rem;
+}
+
+.table {
+  margin-top: 1rem;
+}
+
+.pagination {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.actionButtons button {
+  margin-right: 0.5rem;
+}
+.fixedTable {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.fixedTable th,
+.fixedTable td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nameColumn {
+  width: 40%;
+}
+
+.classColumn {
+  width: 30%;
+}
+
+.actionColumn {
+  width: 30%;
+}
