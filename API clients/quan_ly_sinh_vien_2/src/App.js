@@ -1,16 +1,26 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+import { useSelector, useDispatch } from 'react-redux';
+import { logout } from './redux/authSlice';
+
 import AddStudent from './components/AddStudent';
 import UpdateStudent from './components/UpdateStudent';
-import StudentList from './components/StudentList';
 import StudentDetail from './components/StudentDetail';
-import './App.css'; // Đảm bảo bạn có file này để thêm các styles tùy chỉnh
+import StudentList from './components/StudentList';
+import Login from './components/Login';
+import PrivateRoute from './components/PrivateRoute';
+
 
 function App() {
+  const user = useSelector((state) => state.auth.user);
+  const dispatch = useDispatch();
+
+  const handleLogout = () => {
+    dispatch(logout());
+  };
+
   return (
     <Router>
       <div className="App d-flex flex-column min-vh-100">
@@ -21,7 +31,14 @@ function App() {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link as={Link} to="/">Trang chủ</Nav.Link>
-                <Nav.Link as={Link} to="/add">Thêm sinh viên</Nav.Link>
+                {user && <Nav.Link as={Link} to="/add">Thêm sinh viên</Nav.Link>}
+              </Nav>
+              <Nav>
+                {user ? (
+                  <Nav.Link onClick={handleLogout}>Đăng xuất</Nav.Link>
+                ) : (
+                  <Nav.Link as={Link} to="/login">Đăng nhập</Nav.Link>
+                )}
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -29,10 +46,13 @@ function App() {
 
         <Container className="flex-grow-1 mt-4">
           <Routes>
-            <Route path="/" element={<StudentList />} />
-            <Route path="/add" element={<AddStudent />} />
-            <Route path="/edit/:id" element={<UpdateStudent />} />
-            <Route path="/detail/:id" element={<StudentDetail />} />
+            <Route path="/login" element={<Login />} />
+            <Route element={<PrivateRoute />}>
+              <Route path="/" element={<StudentList />} />
+              <Route path="/add" element={<AddStudent />} />
+              <Route path="/edit/:id" element={<UpdateStudent />} />
+              <Route path="/detail/:id" element={<StudentDetail />} />
+            </Route>
           </Routes>
         </Container>
 
